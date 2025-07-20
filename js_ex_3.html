@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Digits (No Loop)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var x = prompt("Enter a 3-digit number:");
+        x = parseInt(x);  
+        var n1 = x % 10;
+        document.write("Digit 1: " + n1 + "<br>");
+        x = Math.floor(x / 10);
+        var n2 = x % 10;
+        document.write("Digit 2: " + n2 + "<br>");
+        x = Math.floor(x / 10);
+        var n3 = x % 10;
+        document.write("Digit 3: " + n3 + "<br>");
+        var reversed = n1 * 100 + n2 * 10 + n3;
+        document.write("<b>Reversed Number: " + reversed + "</b>");
+    </script>
+</body>
+</html>

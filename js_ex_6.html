@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Function
+        </title>
+    </head>
+    <body>
+        <script>
+            function getcube(){
+                var number=document.getElementById("number").value;
+                number=parseInt(number);
+                var total=number+number+number+number+number;
+                total=parseInt(total);
+                var average=Math.floor(total/5);
+                average=parseInt(average);
+                document.write("Total: "+total,"<br>","<br>");
+                document.write("Average: "+average);
+            }
+        </script>
+        <form>
+            Enter name:<input type="text" id="name" name="name"/><br><br>
+            Enter rollno:<input type="text" id="rnumber" name="rnumber"/><br><br>
+            Enter mark1:<input type="text" id="number" name="number"/><br><br>
+            Enter mark2:<input type="text" id="number" name="number"/><br><br>
+            Enter mark3:<input type="text" id="number" name="number"/><br><br>
+            Enter mark4:<input type="text" id="number" name="number"/><br><br>
+            Enter mark5:<input type="text" id="number" name="number"/><br><br>
+            <input type="button" value="click" onclick="getcube()">
+        </form>
+    </body>
+</html>
